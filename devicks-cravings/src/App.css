@@ -1,0 +1,75 @@
+/* DEVICK'S CRAVINGS - DYNAMIC FLYER THEME */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700;900&display=swap');
+
+:root {
+  --bg-cream: #FDFBF7;
+  --forest-green: #0A3A25;
+  --accent-gold: #E5A900;
+  --accent-red: #D32F2F;
+}
+
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif !important;
+}
+
+body {
+  background-color: #FDFBF7 !important;
+  background-image: radial-gradient(circle at top, #FFFDF9 0%, #F5F0E1 100%) !important;
+  color: #1A1A1A !important;
+  overflow-x: hidden !important;
+  min-height: 100vh;
+}
+
+/* Script Calligraphy Font */
+.flyer-script-title {
+  font-family: 'Dancing Script', cursive !important;
+  font-weight: 700 !important;
+}
+
+/* Vibrant Animated Glowing Text */
+.brand-glow-text {
+  font-family: 'Dancing Script', cursive !important;
+  text-shadow: 0 0 12px rgba(229, 169, 0, 0.6), 0 0 24px rgba(211, 47, 47, 0.4);
+  animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 8px rgba(229, 169, 0, 0.5), 0 0 15px rgba(211, 47, 47, 0.3); }
+  100% { text-shadow: 0 0 16px rgba(229, 169, 0, 0.9), 0 0 30px rgba(211, 47, 47, 0.7); }
+}
+
+/* Floating Heart Pulse Animation */
+.floating-heart {
+  display: inline-block;
+  animation: floatHeart 2s ease-in-out infinite alternate;
+  color: #D32F2F;
+}
+
+@keyframes floatHeart {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(-4px) scale(1.15); }
+}
+
+/* Feature Badges with Hover Pop */
+.feature-badge-item {
+  background: #FFFFFF;
+  border: 1.5px solid #E6DFC5;
+  border-radius: 12px;
+  padding: 8px 4px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-badge-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(10, 58, 37, 0.12);
+}
+
+/* Hide Scrollbar on Pill Navigation */
+::-webkit-scrollbar {
+  display: none !important;
+}
